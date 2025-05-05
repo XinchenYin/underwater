@@ -74,8 +74,8 @@ class UnderwaterDataset(Dataset):
 # --- Example usage ---
 if __name__ == "__main__":
     ds = UnderwaterDataset(
-        txt_dir='norm_time',
-        img_dir='freq_domain',
+        txt_dir='data/norm_time',
+        img_dir='data/freq_domain',
         # you can pass e.g. a lambda to normalize your signal:
         txt_transform=lambda arr: torch.from_numpy((arr - arr.mean())/arr.std()).float(),
         # or standard torchvision transforms for your image:

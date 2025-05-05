@@ -3,8 +3,6 @@ __pycache__
 *.pth
 *.zip
 *.out
+data
 dataset
-freq_domain
-norm_time
-split_time
 wandb

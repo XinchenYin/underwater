@@ -8,7 +8,7 @@ import math
 def split_csv_to_txts_sliding(csv_path, out_dir,
                               sample_rate=6250,
                               window_sec=1.0,
-                              step_sec=0.01,
+                              step_sec=0.1,
                               skiprows=4):
     """
     Read `csv_path`, skip first `skiprows` lines, take only even columns,
@@ -47,7 +47,7 @@ def split_csv_to_txts_sliding(csv_path, out_dir,
 
 def main():
     p = argparse.ArgumentParser(
-        description="Slide 1s (6.25k rows) window every 0.01s (≈62 rows) over x_y_t.csv files")
+        description="Slide 1s (6.25k rows) window every 0.1s (625 rows) over x_y_t.csv files")
     p.add_argument("in_dir",  help="Directory containing x_y_t.csv files")
     p.add_argument("out_dir", help="Directory to write the .txt windows")
     args = p.parse_args()

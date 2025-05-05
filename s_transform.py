@@ -92,6 +92,6 @@ def process_directory(input_dir, output_dir):
 
 if __name__ == "__main__":
     # Customize these two paths as needed:
-    input_folder = 'split_time'
-    output_folder = 'freq_domain'
+    input_folder = 'data/split_time'
+    output_folder = 'data/freq_domain'
     process_directory(input_folder, output_folder)
